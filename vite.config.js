@@ -6,13 +6,5 @@ export default defineConfig({
   server: {
     open: '/main/index.html',
   },
-  plugins: [react()],
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'main/index.html'),
-        apple: resolve(__dirname, 'apps/apple/index.html'),
-      },
-    },
-  },
+  plugins: [react()]
 })

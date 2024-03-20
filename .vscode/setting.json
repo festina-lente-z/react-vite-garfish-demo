@@ -45,7 +45,8 @@
       "*.json": "jsonc",
       ".prettierrc": "json",
       ".stylelintrc": "json",
-      ".htmlhintrc": "json"
+      ".htmlhintrc": "json",
+      "*.css": "tailwindcss"
     },
     "cSpell.words": [
       "ahooks",
