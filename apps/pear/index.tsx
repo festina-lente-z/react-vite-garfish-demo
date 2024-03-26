@@ -1,14 +1,15 @@
 import Garfish from 'garfish';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import RootComponent from './root'
+import App from './app'
 import '../index.css'
 import { reactBridge } from '@garfish/bridge-react-v18';
 
 console.log('apple')
 
 export const provider = reactBridge({
-	rootComponent: RootComponent
+	el: '#sub-app',
+	rootComponent: App
 });
 
 // export const provider = () => {

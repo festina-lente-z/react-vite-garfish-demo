@@ -8,7 +8,7 @@ import {
 import './index.css'
 import Main from './main';
 
-const RootComponent = ()=>{
+const RootComponent = () => {
 	return (
 		<Router>
 			<Routes>
@@ -19,11 +19,15 @@ const RootComponent = ()=>{
           />
 					<Route
             path="apps/apple/*"
-            element={<Main/>}
+            element={<App/>}
           />
 			</Routes>
 		</Router>
 	)
+}
+
+const App = () => {
+  return <div id="micro-app" className="w-5/6 h-screen bg-indigo-100 p-4"></div>
 }
 
 export default RootComponent;
