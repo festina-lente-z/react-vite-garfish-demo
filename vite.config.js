@@ -8,5 +8,8 @@ export default defineConfig({
     open: '/main/index.html',
     // origin: 'http://localhost:5173'
   },
+  optimizeDeps: {
+    include: ["rxjs"]
+  }
   // plugins: [react()]
 })

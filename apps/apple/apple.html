@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>apple</title>
+    <!-- <script type="garfish-config">
+      {
+        "sandbox": {
+          "noEntryScripts": ["rxjs"]
+        }
+      }
+    </script> -->
 </head>
 <body>
    <div id="sub-app"></div> 
-   <script type="module" src="/apps/apple/index.tsx"></script>
+   <script type="module" defer src="/apps/apple/index.tsx"></script>
+   <!-- <script>
+    console.log(window.__GARFISH_ESM_ENV___0,'Window.__GARFISH_ESM_ENV___0')
+    console.log(window,'window')
+    setTimeout(() => {
+      console.log(window.__GARFISH_ESM_ENV___0,'Window.__GARFISH_ESM_ENV___0')
+      console.log(window,'window')
+    }, 0)
+    console.log(window.__GARFISH_ESM_ENV___0,'Window.__GARFISH_ESM_ENV___0')
+   </script> -->
 </body>
 </html>
